@@ -1,2 +1,10 @@
-<h1 class="font-extrabold">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>Pokemon Reference Page</title>
+</svelte:head>
+
+<section class="flex flex-col gap-2 pt-8">
+	<h1 class="text-center text-4xl font-bold">Pokemon Reference</h1>
+	<p class="text-center">
+		Pokemon is an endangered creatures that every single individual has to be protected by the law.
+	</p>
+</section>
