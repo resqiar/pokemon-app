@@ -1,4 +1,5 @@
 <script>
+	import Card from '../components/Card.svelte';
 	import Nav from '../components/Nav.svelte';
 	import { pokemon } from '../stores/pokestore';
 </script>
@@ -18,7 +19,9 @@
 </header>
 
 <main>
-	{#each $pokemon as individual}
-		<p>{individual.name}</p>
-	{/each}
+	<article class="mt-8 flex flex-wrap gap-8">
+		{#each $pokemon as individual}
+			<Card name={individual.name} />
+		{/each}
+	</article>
 </main>
